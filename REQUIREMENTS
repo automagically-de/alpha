@@ -1,0 +1,25 @@
+software:
+-------------------------------------------------------------------------------
+* OS with ported SDL: tested with Linux, SunOS 5.5.1 & Windows
+* ANSI/ISO C Compiler (tested with gcc 2.95.x/3.0.x, MSVC)
+* make (GNU make? - there are some strange things in the Makefile)
+  (extra Makefile.msvc for nmake/cl)
+* SDL 1.2
+* SDL_image (1.2?)
+
+* (optional) SDL_mixer (1.2?) for music (other sound?)
+* (optional) zlib for gzip'ed map files
+
+to regenerate data files:
+* (optional) sed to generate music playlist
+* (optional) povray to render images
+* (optional) ImageMagick to crop & resize rendered images
+             [version 5.4.0 is o.k. - 4.2.9 doesn't work]
+
+hardware:
+-------------------------------------------------------------------------------
+* a fast CPU
+* 16-bit capable graphics card (8-bit seems to work, too, but it's ugly);
+* preferable a "direct" display, remote displays (e.g. X11 clients) are slow
+* 32+ MB RAM (untestet, testing machines had 128-640MB)
+

@@ -1,0 +1,8 @@
+* get speed out of mousemove check functions
+* continue widget set
+* tooltip handler                                                           [x]
+* text message queue & window                                               [x]
+* expand map engine to support tiles bigger than 1x1                        [x]
+* create more tiles
+* fix isometric=>screen coordinate conversion for hills
+* test list code

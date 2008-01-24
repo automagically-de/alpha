@@ -1,0 +1,22 @@
+## config file
+
+#progname = "MyGame Alpha"
+
+width = 800  # width of window
+height="600" # height
+
+# width = 1280
+# height = 1024
+# fullscreen
+
+map = "test.map"
+
+nomusic
+
+# resizable
+
+# invertmouse
+
+# fullscreen
+
+# EOF

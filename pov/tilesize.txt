@@ -1,0 +1,20 @@
+tx: tiles x
+ty: tiles y
+
+tilesize: 124x62
+
+
+   width = (tx + ty) * (tilewidth / 2)
+
+   height = (tx + ty) * (tileheight / 2) - 1
+
+X: 59
+Y: 327
+W: 725
+H: 362
+
+tw: 496
+th: 247
+
+-------------------------------------------------------------------------------
+origin: (329,263)

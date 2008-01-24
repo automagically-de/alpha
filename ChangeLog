@@ -1,0 +1,118 @@
+2001&11/14:
+  * list: more functions (prepend, deleteby[index|data])
+
+2001/11/09:
+  * list: generic linked list functions
+
+2001/10/30:
+  * Makefile.msvc: to use with MS VisualC's cl & nmake (Windows)
+
+2001/10/29:
+  * all: bugfixes to compile on SunOS & Windows
+  * conf (& others): -noalpha option to improve performance
+
+2001/10(27:
+  * parse: config file line parser
+  * tiles: load tile infos from file (tiles.conf)
+
+2001/10/20:
+  * message: on screen message queue
+
+2001/10/19:
+  * audio/music: fixed playlist handler
+  * conf: "-nomusic" option
+
+2001/10/13:
+  * data: set standard size of tiles to 128x64
+
+2001/10/12:
+  * Makefile: fixes in file globbing & depencies
+  * mapengine: zooming works..
+  * gui: buttons to zoom in & out
+
+2001/10/10:
+  * image_scale: initial (down)scaler
+
+2001/10/07:
+  * widget_scrollbox: started, far away from ready...
+
+2001/10/05:
+  * main: cleanup - moved a lot of code to game.c
+  * mapengine/minimap: code cleanup, removed redundant parameters
+
+2001/10/04;
+  * tooltip: created tooltip functions
+  * minimap: support for bitmaps
+
+2001/10/03:
+  * data: more ground tiles (mountains)
+
+2001/10/02:
+  * mapengine: initial work on hills/mountains
+  * imagecache: bug fixed
+  * data: more track tiles
+
+2001/10/01:
+  * mapengine: proper clipping for tiles bigger than 1x1
+  * conf/main: optional inverted mouse scrolling
+
+2001/09/06:
+  * mapengine: preliminary support for tiles greater than 1x1
+
+2001/09/03:
+  * maploader: changes at map buffer
+
+2001/08/30:
+  * GUI improvements
+  * window system/widget set: bug fixes
+
+2001/08/29:
+  * window system: windows moveable
+  * window system: window raised on click
+  * initial sound support (music for now)
+  * music playlist
+
+2001/08/28:
+  * started window system
+
+2001/08/27:
+  * map loader works, loads "test.map[.gz]" by default
+  * create sample map:       ^^^^^^^^^^^^^
+
+2001/08/26:
+  * conf: error message on unknown variable in config file
+  * widget set: new widget type: frame (beveled, flat..)
+  * widget set: widget_*_create now return widget pointer
+  * widget set: resizable & movable widgets & boxes
+  * GUI update on resize event
+  * ugly icon set for window
+  * start of map loader
+
+2001/08/25:
+  * code cleanups
+  * window resizable (optional) - GUI not yet interested in changes...
+
+2001/08/24:
+  * widget: mouseenter & mouseleave events are generated
+  * widget_button: highlighting during mouseover
+  * gfx_prim: gfx_edge() to generate beveled borders
+  * config file parser
+
+2001/08/23:
+  * main menu startet
+  * widget set: buttons operational
+  * fixes in gfx routines
+  * conf: help message & version info
+  * gfx_prim: line drawing routine
+  * Makefile: make package (dist)
+
+2001/08/22:
+  * command line parser
+  * start of gui / widget set
+  * fixed fatal bug in rectangle routine
+
+2001/08/21:
+  * started changelog
+  * screen to map translation finished (and working ;)
+  * scrolling works
+  * minimap works

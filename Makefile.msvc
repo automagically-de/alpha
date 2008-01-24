@@ -1,0 +1,34 @@
+CC = cl.exe
+
+PREFIX_SDL = "d:\\temp\\sdl-1.2.2"
+
+DATADIR = d:/temp/alpha/data
+
+BIN = alpha.exe
+CFLAGS = /W1 /nologo
+DEFS = /DDEBUG /D"DATADIR=\"$(DATADIR)\"" /DDELAY
+INCS = /I$(PREFIX_SDL)\\include
+LIBS = /LIBPATH:$(PREFIX_SDL)\\lib SDL.lib SDLmain.lib SDL_image.lib
+
+OBJS = main.obj game.obj misc.obj video.obj imagecache.obj mapengine.obj \
+       minimap.obj gui.obj audio.obj music.obj tooltip.obj image_scale.obj \
+       waypoint.obj route.obj list.objlist.obj  \
+       tiles.obj message.obj vfs.obj widgetbox.obj widget.obj \
+       widget_button.obj widget_frame.obj widget_label.obj \
+       widget_scrollbox.obj windowlist.obj window.obj \
+       gfx_prim.obj text.obj mem.obj conf.obj calc.obj parse.obj maploader.obj
+
+.SUFFIXES: .c .obj
+
+all: $(BIN)
+
+alpha.exe: $(OBJS)
+	$(CC) $(OBJS) /link $(LIBS) /out:$(BIN)
+
+.c.obj:
+	$(CC) /c $(DEFS) $(CFLAGS) $(INCS) /o $@ /Tc $<
+
+clean:
+	del $(BIN) $(OBJS) *.bak
+
+
